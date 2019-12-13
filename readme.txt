@@ -1,99 +1,99 @@
-Para Bozma Makinesi
+En Az SayÄ±da Bozuk Para Verme
 
-Büşra Erkan - 170201018
-Gözde Örgü  - 170201005
+BÃ¼ÅŸra Erkan - 170201018
+GÃ¶zde Ã–rgÃ¼  - 170201005
 
-Bu readme.txt dosyası, En Az Sayıda Bozuk Para Verme Projesi'ne aittir.
-Bu paket, kaynak kodu ile aynı dizin içerisinde bulunacaktır.
+Bu readme.txt dosyasÄ±, En Az SayÄ±da Bozuk Para Verme Projesi'ne aittir.
+Bu paket, kaynak kodu ile aynÄ± dizin iÃ§erisinde bulunacaktÄ±r.
 
 
-1-PAKETİN İÇERİĞİ:
+1-PAKETÄ°N Ä°Ã‡ERÄ°ÄÄ°:
 ----------
-170201018-170201005.txt -Projenin tek dosyaya indirgenmiş salt kaynak kodu.
+170201018-170201005.txt -Projenin tek dosyaya indirgenmiÅŸ salt kaynak kodu.
 readme.txt - Bu dosya.
-170201018-170201005.zip - Projenin kaynak kodunun ve yardımcı dosyaların ziplenmiş hali.
-rapor.doc - Proje raporu- Projenin tek dosyaya indirgenmiş salt kaynak kodu.
+170201018-170201005.zip - Projenin kaynak kodunun ve yardÄ±mcÄ± dosyalarÄ±n ziplenmiÅŸ hali.
+rapor.doc - Proje raporu- Projenin tek dosyaya indirgenmiÅŸ salt kaynak kodu.
 readme.txt - Bu dosya.
 ----------
 
 
-2-SİSTEM GEREKSİNİMLERİ:
+2-SÄ°STEM GEREKSÄ°NÄ°MLERÄ°:
 -------------------
 Oracle VM virtualbox - https://www.virtualbox.org/
-Sanal Makine İmajı   - https://github.com/KOU-Embedded-System-Lab/os-base-image/releases
+Sanal Makine Ä°majÄ±   - https://github.com/KOU-Embedded-System-Lab/os-base-image/releases
 -------------------
 
 
-3-PROJEYİ ÇALIŞTIRMAK:
+3-PROJEYÄ° Ã‡ALIÅTIRMAK:
 -------------------
-Paket içeriğini yukarıda görebilirsiniz.
+Paket iÃ§eriÄŸini yukarÄ±da gÃ¶rebilirsiniz.
 
-Bu kod, 2 adet önceden tanımlanmış sanal makinelerde çalıştırıldı.
+Bu kod, 2 adet Ã¶nceden tanÄ±mlanmÄ±ÅŸ sanal makinelerde Ã§alÄ±ÅŸtÄ±rÄ±ldÄ±.
 
-Sanal makineyi indirmek için;
+Sanal makineyi indirmek iÃ§in;
 https://github.com/KOU-Embedded-System-Lab/os-base-image/releases
 adresini ziyaret edebilirsiniz.
 
-Bu iki durumda da, kod, herhangi bir hata vermeksizin, daha önceden
-belirlenen kriterlere uygun çalıştı.
+Bu iki durumda da, kod, herhangi bir hata vermeksizin, daha Ã¶nceden
+belirlenen kriterlere uygun Ã§alÄ±ÅŸtÄ±.
 
 
 4-KODU DERLEMEK:
 ------------------
-Artık bilgisayarımızda kurulu olan sanal makine ile kodu kolayca derleyebiliriz.
+ArtÄ±k bilgisayarÄ±mÄ±zda kurulu olan sanal makine ile kodu kolayca derleyebiliriz.
 
-Projeyi geliştirim kartında çalıştırmak için kodu daha önceden oluşturulmuş Tiva C
-projesinde yer alan "main.c"ye yapıştırıp build butonuna tıkladıktan sonra debug 
-butonuna tıklamanız yeterli.
+Projeyi geliÅŸtirim kartÄ±nda Ã§alÄ±ÅŸtÄ±rmak iÃ§in kodu daha Ã¶nceden oluÅŸturulmuÅŸ Tiva C
+projesinde yer alan "main.c"ye yapÄ±ÅŸtÄ±rÄ±p build butonuna tÄ±kladÄ±ktan sonra debug 
+butonuna tÄ±klamanÄ±z yeterli.
 
-Eğer kart, sanal makine tarafından bulunamadıysa (OpenOCD hatası) sanal makineye
-bağlı olan bir kart olmayabilir. Sağ alt kısımdan usb ikonuna sağ tıklayarak 
-Texas Instruments'ı seçip sanal makineye bağlamanız gerekmektedir.
+EÄŸer kart, sanal makine tarafÄ±ndan bulunamadÄ±ysa (OpenOCD hatasÄ±) sanal makineye
+baÄŸlÄ± olan bir kart olmayabilir. SaÄŸ alt kÄ±sÄ±mdan usb ikonuna saÄŸ tÄ±klayarak 
+Texas Instruments'Ä± seÃ§ip sanal makineye baÄŸlamanÄ±z gerekmektedir.
 
-Ana Makinesi GNU/Linux olan makinelerde VirtualBox, kullanıcı izinlerine sahip
-olmayabiliyor. Eğer takılı olan USB aygıtları tanımıyorsa, 
+Ana Makinesi GNU/Linux olan makinelerde VirtualBox, kullanÄ±cÄ± izinlerine sahip
+olmayabiliyor. EÄŸer takÄ±lÄ± olan USB aygÄ±tlarÄ± tanÄ±mÄ±yorsa, 
 'sudo usermod -G vboxusers -a $USER'
-kodunu çalıştırmanız ve sisteminizi yeniden başlatmanız gerekmektedir. 
+kodunu Ã§alÄ±ÅŸtÄ±rmanÄ±z ve sisteminizi yeniden baÅŸlatmanÄ±z gerekmektedir. 
 ------------------
 
 
 5- PARAMETRELER
 ---------------------------
-Kodun çalışması için başlangıçta herhangi bir parametre gerekmiyor.
+Kodun Ã§alÄ±ÅŸmasÄ± iÃ§in baÅŸlangÄ±Ã§ta herhangi bir parametre gerekmiyor.
 ------------------
 
 
 6- PROGRAMIN KULLANIMI
 -----------------------------
-Bu proje kullanıcıdan aldığı parayı, ürüne göre değerlendirip kullanıcıya
-verilen para üstünün en az sayıda bozuk paradan oluşmasını amaçlar.
+Bu proje kullanÄ±cÄ±dan aldÄ±ÄŸÄ± parayÄ±, Ã¼rÃ¼ne gÃ¶re deÄŸerlendirip kullanÄ±cÄ±ya
+verilen para Ã¼stÃ¼nÃ¼n en az sayÄ±da bozuk paradan oluÅŸmasÄ±nÄ± amaÃ§lar.
 
-Öncelikle kullanıcının otomata para girmesi gerekmektedir. Bu işlem 
-butonlarla sağlanmaktadır. İlk dört buton para girişi içindir. İlk buton 1 TL,
-ikinci buton 50 Kuruş, üçüncü buton 25 Kuruş içindir. Dördüncü buton ise
-para atma işleminin bittiğini belirten "Bitiş" butonudur. Örneğin kullanıcı
-birinci butona 2 kere, ikinci butona 3 kere ve üçüncü butona 1 kere basarsa
-otomata 3 TL 25 Kuruş para girişinde bulunacaktır.
+Ã–ncelikle kullanÄ±cÄ±nÄ±n otomata para girmesi gerekmektedir. Bu iÅŸlem 
+butonlarla saÄŸlanmaktadÄ±r. Ä°lk dÃ¶rt buton para giriÅŸi iÃ§indir. Ä°lk buton 1 TL,
+ikinci buton 50 KuruÅŸ, Ã¼Ã§Ã¼ncÃ¼ buton 25 KuruÅŸ iÃ§indir. DÃ¶rdÃ¼ncÃ¼ buton ise
+para atma iÅŸleminin bittiÄŸini belirten "BitiÅŸ" butonudur. Ã–rneÄŸin kullanÄ±cÄ±
+birinci butona 2 kere, ikinci butona 3 kere ve Ã¼Ã§Ã¼ncÃ¼ butona 1 kere basarsa
+otomata 3 TL 25 KuruÅŸ para giriÅŸinde bulunacaktÄ±r.
 
-Sıradaki işlem ürün seçme işlemidir. Otomatta toplamda 5 çeşit ürün 
-bulunmaktadır. Bunlar su, çay, kahve, çikolata ve bisküvidir. Beşinci
-buton su, altıncı buton çay, yedinci buton kahve, sekizinci buton çikolata,
-dokuzuncu buton bisküvi için kullanılmaktadır. Onuncu buton "Bitiş" butonudur.
-Kullanıcı hangi üründen kaç tane istiyorsa önce ilgili butona adet sayısı kadar
-basmalı daha sonra da "Bitiş" butonuna basmalıdır.Kullanıcı eğer "Reset" butonuna
-basarsa bütün işlemler iptal olur. "Reset" butonu on birinci butondur.
+SÄ±radaki iÅŸlem Ã¼rÃ¼n seÃ§me iÅŸlemidir. Otomatta toplamda 5 Ã§eÅŸit Ã¼rÃ¼n 
+bulunmaktadÄ±r. Bunlar su, Ã§ay, kahve, Ã§ikolata ve biskÃ¼vidir. BeÅŸinci
+buton su, altÄ±ncÄ± buton Ã§ay, yedinci buton kahve, sekizinci buton Ã§ikolata,
+dokuzuncu buton biskÃ¼vi iÃ§in kullanÄ±lmaktadÄ±r. Onuncu buton "BitiÅŸ" butonudur.
+KullanÄ±cÄ± hangi Ã¼rÃ¼nden kaÃ§ tane istiyorsa Ã¶nce ilgili butona adet sayÄ±sÄ± kadar
+basmalÄ± daha sonra da "BitiÅŸ" butonuna basmalÄ±dÄ±r.KullanÄ±cÄ± eÄŸer "Reset" butonuna
+basarsa bÃ¼tÃ¼n iÅŸlemler iptal olur. "Reset" butonu on birinci butondur.
 
-Tüm bu işlemlerden sonra program 1-4 (1 ve 4 dahil) arasında random sayı
-üretilir. Eğer random sayı 2 olursa para sıkışma olur  Para sıkışma işleminde 
-kırmızı led yanar aksi durumda (random üretilen sayı 2 e eşit değilse) problem 
-olmadığını belirten yeşil led yanar Para sıkışma durumunda kişiye para iadesi 
-yapılacak ve tuşlanan ürünler stoktan düşmez. Tüm bu kontrollerden sonra 
-Reset butonuna basılır. 
+TÃ¼m bu iÅŸlemlerden sonra program 1-4 (1 ve 4 dahil) arasÄ±nda random sayÄ±
+Ã¼retilir. EÄŸer random sayÄ± 2 olursa para sÄ±kÄ±ÅŸma olur  Para sÄ±kÄ±ÅŸma iÅŸleminde 
+kÄ±rmÄ±zÄ± led yanar aksi durumda (random Ã¼retilen sayÄ± 2 e eÅŸit deÄŸilse) problem 
+olmadÄ±ÄŸÄ±nÄ± belirten yeÅŸil led yanar Para sÄ±kÄ±ÅŸma durumunda kiÅŸiye para iadesi 
+yapÄ±lacak ve tuÅŸlanan Ã¼rÃ¼nler stoktan dÃ¼ÅŸmez. TÃ¼m bu kontrollerden sonra 
+Reset butonuna basÄ±lÄ±r. 
 
-Son olarak kullanıcıya para üstü verilir.  Otomat kasada bulunan bozuk 
-paralardan en azını kullanarak kullanıcıya bozuk para verir. Kasa sürekli kontrol ve
-güncelleme yapar. Eğer kasada yeteri kadar para yoksa "Kasada yeterli para yoktur"
-uyarısı verilir.
+Son olarak kullanÄ±cÄ±ya para Ã¼stÃ¼ verilir.  Otomat kasada bulunan bozuk 
+paralardan en azÄ±nÄ± kullanarak kullanÄ±cÄ±ya bozuk para verir. Kasa sÃ¼rekli kontrol ve
+gÃ¼ncelleme yapar. EÄŸer kasada yeteri kadar para yoksa "Kasada yeterli para yoktur"
+uyarÄ±sÄ± verilir.
 
  
 
