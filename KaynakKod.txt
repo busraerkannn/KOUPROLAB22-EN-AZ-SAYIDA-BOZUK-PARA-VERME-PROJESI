@@ -47,9 +47,9 @@ char urunler[200][10]={"20","20","10","1","su","30","50 Kurus","2","cay","20","1
 
 void init_port() {
 	volatile unsigned long delay;
-	SYSCTL_RCGC2_R |= SYSCTL_RCGC2_GPIOD; // Port Dnin saati aktifle˛tir
-	SYSCTL_RCGC2_R |= SYSCTL_RCGC2_GPIOC; // Port Cnin saati aktifle˛tir
-	SYSCTL_RCGC2_R |= SYSCTL_RCGC2_GPIOE; // Port Enin saati aktifle˛tir
+	SYSCTL_RCGC2_R |= SYSCTL_RCGC2_GPIOD; // Port Dnin saati aktifle√ætir
+	SYSCTL_RCGC2_R |= SYSCTL_RCGC2_GPIOC; // Port Cnin saati aktifle√ætir
+	SYSCTL_RCGC2_R |= SYSCTL_RCGC2_GPIOE; // Port Enin saati aktifle√ætir
 
 	delay = SYSCTL_RCGC2_R; // Gecikme
 
@@ -57,20 +57,20 @@ void init_port() {
 	GPIO_PORTD_PCTL_R = 0x00000000;
 	GPIO_PORTD_DIR_R = 0xB0;         // 0 1 2 3 6 INPUT
 	GPIO_PORTD_AFSEL_R = 0x00;
-	GPIO_PORTD_DEN_R =0xFF; 		// D›J›TAL KULLANIM AKT›FLEﬁT›R
+	GPIO_PORTD_DEN_R =0xFF; 		// D√ùJ√ùTAL KULLANIM AKT√ùFLE√ûT√ùR
 
 
 	GPIO_PORTC_AMSEL_R = 0x00; 		// C PORTU ANALOG KULLANIMINA KAPAT
 	GPIO_PORTC_PCTL_R = 0x00000000;
 	GPIO_PORTC_DIR_R = 0x8F;         // 4 5 6 INPUT
 	GPIO_PORTC_AFSEL_R = 0x00;
-	GPIO_PORTC_DEN_R =0xFF; 		// D›J›TAL KULLANIM AKT›FLEﬁT›R
+	GPIO_PORTC_DEN_R =0xFF; 		// D√ùJ√ùTAL KULLANIM AKT√ùFLE√ûT√ùR
 
 	GPIO_PORTE_AMSEL_R = 0x00; 		// E PORTU ANALOG KULLANIMINA KAPAT
 	GPIO_PORTE_PCTL_R = 0x00000000;
-	GPIO_PORTE_DIR_R = 0xC7; 		// 3 4 5 ›NPUT
+	GPIO_PORTE_DIR_R = 0xC7; 		// 3 4 5 √ùNPUT
 	GPIO_PORTE_AFSEL_R = 0x00;
-	GPIO_PORTE_DEN_R =0xFF; 		// D›J›TAL KULLANIM AKT›FLEﬁT›R
+	GPIO_PORTE_DEN_R =0xFF; 		// D√ùJ√ùTAL KULLANIM AKT√ùFLE√ûT√ùR
 
 
 }
@@ -83,7 +83,7 @@ void init_portB()
 	    GPIO_PORTB_AMSEL_R &= ~0xFF; // ANALOG I/O KAPALI
 	    GPIO_PORTB_PCTL_R &= ~0xFFFFFFFF;
 	    GPIO_PORTB_DIR_R |= 0xFF;
-	    GPIO_PORTB_AFSEL_R &= ~0xFF; // ALTERNAT›F FONKS›YONLARI KAPALI
+	    GPIO_PORTB_AFSEL_R &= ~0xFF; // ALTERNAT√ùF FONKS√ùYONLARI KAPALI
 	    GPIO_PORTB_DEN_R |= 0xFF;
 	    GPIO_PORTB_DR8R_R |= 0xFF;
 }
@@ -439,8 +439,8 @@ void Lcd_init() {
         Lcd_Temizle();
         Lcd_Putch(0x28,0);//fonksiyon secimi
         Lcd_Putch(0x06,0);//ekleme modu
-        Lcd_Putch(0x80,0);//kursˆr konumu
-        Lcd_Putch(0x0f,0);//kursˆr¸ kapat
+        Lcd_Putch(0x80,0);//kurs√∂r konumu
+        Lcd_Putch(0x0f,0);//kurs√∂r√º kapat
         Lcd_Temizle();
 
 }
